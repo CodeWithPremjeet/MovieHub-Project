@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell search-page">
+        <header class="site-header">
+            <p class="eyebrow">A place for film discovery</p>
+            <h1>Movie Hub</h1>
+            <p class="page-intro">Search for a film to explore its story, cast, and details.</p>
+        </header>
+
+        <form action="" id="form" class="search-form" role="search">
+            <label class="sr-only" for="formInput">Search movies</label>
+            <input type="search" id="formInput" name="movie" placeholder="Enter a movie title" autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+
+        <section id="movies-list" class="movie-grid" aria-live="polite" aria-label="Search results"></section>
+    </main>
+
+    <script src="movie-hub.js"></script>
+</body>
+</html>
