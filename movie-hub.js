@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
 
 async function searchMovies(movieName) {
     movieList.innerHTML = `<div class="loader"></div>`;
-    let response = await fetch(`http://www.omdbapi.com/?apikey=ea8359f2&s=${encodeURIComponent(movieName)}`);
+    let response = await fetch(`https://www.omdbapi.com/?apikey=ea8359f2&s=${encodeURIComponent(movieName)}`);
     let data = await response.json();
 
     console.log(data);
